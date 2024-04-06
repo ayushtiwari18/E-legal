@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advisors</title>
+    <link rel="stylesheet" href="/advisors.css">
+</head>
+<body>
+    
+    <h1>Find Your Advisors</h1>
+
+<% for (advisor of advisors) { %>
+  <div class="lawyer">
+    <img src="<%= advisor.img %>" height="200px" width="200px">
+    <div class="lawyer-info">
+     <h2><%= advisor.username %></h2>
+     <p><%= advisor.content %>
+    </p>
+     <form><button>
+      chat with them
+     </button></form>
+    </div>
+     </div>
+     <br>
+<% } %>
+
+</body>
+</html>
